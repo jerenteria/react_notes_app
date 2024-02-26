@@ -1,0 +1,19 @@
+label {
+    color: white;
+    font-size: 32px;
+}
+
+textarea {
+    height: 100px;
+    width: 250px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+input {
+    margin-left: 22px;
+    height: 30px;
+    width: 248px;
+    border-radius: 10px;
+}
+
