@@ -11,7 +11,9 @@ const Input = forwardRef(function Input({ label, textarea, ...props }, ref) {
             {/* dynamically render label */}
             <label>{label}</label>
 {/* if textarea is set to true render a texarea box and any other prop that the user set otherwise render a regular input box */}
-            {textarea ? <textarea {...props} /> : <input {...props} />}
+{/* after using forwardRef in the function we can now use a ref here in the built in input field and 
+forward it to the custom Input component in NewNote.js */}
+            {textarea ? <textarea ref={ref} {...props} /> : <input ref={ref} {...props} />}
         </p>
     );
 });
