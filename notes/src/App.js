@@ -9,7 +9,9 @@ function App() {
     notes: [] // create a state object and store all the notes in an array so we have access to all the notes
   })  
 
-  console.log(note);
+
+
+
 
   // create new note(takes in noteData)
   const handleAddNote = (noteData) => {
@@ -29,7 +31,7 @@ function App() {
 
   return (
     <main className="main">
-        <SideBar />
+        <SideBar notes={setNote.notes} />
         <NewNote onAdd={handleAddNote} />
     </main>
   );
