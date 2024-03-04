@@ -7,3 +7,24 @@
     background-color: #3a3c3f;
     border-right: 2px solid black;
 }
+
+ul {
+    list-style: none;
+    position: absolute;
+}
+
+.sidebar button {
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    width: 104px;
+    border-radius: 11px;
+    margin-left: 30px;
+    background-color: #2c2e31;
+    color: white;
+}
+
+.sidebar button:hover {
+    background-color: #3a3c3f;
+    
+}

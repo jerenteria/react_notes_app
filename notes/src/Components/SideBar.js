@@ -1,20 +1,16 @@
-import { Fragment } from "react";
 import "./SideBar.css";
 
-const SideBar = ({ notes }) => {
+const SideBar = ({ notes, onSelectNote, selectedNoteId }) => {
   return (
-    <aside>
-      <section className="sidebar">
-        <h1>Notes</h1>
-      </section>
+    <aside className="sidebar">
+      <h1>Notes</h1>
       <ul>
-        {notes.map((note) => (
+        {notes.map((note) => {
           <li key={note.id}>
-            <button>{note.title}</button>
-          </li>
-        ))}
+            <button onClick={() => onSelectNote(note.id)}>{note.title}</button>
+          </li>;
+        })}
       </ul>
-      );
     </aside>
   );
 };
