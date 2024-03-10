@@ -1,0 +1,45 @@
+.selected-notes{
+    text-align: center;
+    color: white;
+    margin-left: 60px;
+}
+
+
+.note-title {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.note-description{
+    border: 2px solid black;
+}
+
+p {
+    font-size: 30px;
+    border-radius: 12px;
+}
+#back-button {
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-right: 3px;
+    color: white;
+    background: #2c2e31;
+    transition: transform 0.2s ease-out;
+}
+
+#delete-button {
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-left: 3px;
+    color: white;
+    background: red;
+    transition: transform 0.2s ease-out;
+}
+
+button:hover {
+    background: darkred;
+    transform: translateY(-5px) translateX(-3px)
+}

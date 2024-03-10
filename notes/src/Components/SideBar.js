@@ -5,11 +5,11 @@ const SideBar = ({ notes, onSelectNote, selectedNoteId }) => {
     <aside className="sidebar">
       <h1>Notes</h1>
       <ul>
-        {notes.map((note) => {
+        {notes.map((note) => (
           <li key={note.id}>
             <button onClick={() => onSelectNote(note.id)}>{note.title}</button>
-          </li>;
-        })}
+          </li>
+        ))}
       </ul>
     </aside>
   );

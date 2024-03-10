@@ -16,27 +16,32 @@ header {
 }
 
 #cancel-button {
-    font-size: 22px;
-    margin: 20px;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-left: 55px;
+    margin-right: 3px;
+    background: white;
+    transition: transform 0.2s ease-out;
 }
 
 #cancel-button:hover {
     background-color: #242425;
     color: white;
+    transform: translateY(-5px) translateX(-3px)
 }
 
 #save-button {
-    font-size: 22px;
-    margin: 20px;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-right: 3px;
+    background: white;
+    transition: transform 0.2s ease-out;
 }
 
 #save-button:hover {
     background-color: #242425;
     color: white;
+    transform: translateY(-5px) translateX(-3px)
 }
